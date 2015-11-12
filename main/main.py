@@ -6,7 +6,7 @@ author = eduardo
 def main():
     print("Implementacion de conmpilador K* \n"
           "Semestre 2 2015 Compiladores \n")
-    import Scanner.lexer as lexer
+    import scanner.lexer as lexer
     lex = lexer.lexer()
     lex.input("x_34 ::= 3 * , ; * > 4 + 5")
     # Tokenize
@@ -15,7 +15,6 @@ def main():
         if not tok:
             break  # No more input
         print(tok.type, tok.value, tok.lineno, tok.lexpos)
-        print("test changes")
 
 
 if __name__ == "__main__":

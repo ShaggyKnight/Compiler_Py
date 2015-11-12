@@ -15,6 +15,7 @@ def main():
         if not tok:
             break  # No more input
         print(tok.type, tok.value, tok.lineno, tok.lexpos)
+        print("test changes")
 
 
 if __name__ == "__main__":
